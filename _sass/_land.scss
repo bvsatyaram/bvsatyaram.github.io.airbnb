@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slide {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.centered_content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#land {
+  color: #FFF;
+  text-align: center;
+  background-image: url('../images/spring-bg.jpg');
+  background-size: cover;
+  
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 1em 2em;
+    
+    .link_set {
+      float: right;
+      
+      a {
+        &, &:hover, &:visited, &:active {
+          font-weight: 300;
+          font-size: 1.2vw;
+          margin-left: 1.8em;
+        }
+
+        &:hover {
+          text-decoration: underline
+        }
+      }
+    }
+    
+    a {
+      &, &:hover, &:visited, &:active {
+        color: #FFF;
+        font-size: 2vw;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 4vw;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  p {
+    font-size: 1.5vw;
+    font-weight: 300;
+  }
+
+  a.learn_more {
+    color: #FFF;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2vw;
+    transition: background 0.3s ease-in;
+    
+    &:hover {
+      background: rgba(150,150,150,0.35);
+    }
+  }
+
+  #search {
+    background: rgba(0,0,0, 0.6);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+  }
+}
